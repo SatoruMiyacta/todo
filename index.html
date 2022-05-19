@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サイドバー</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <title>To Do アプリ</title>
+    <link rel="stylesheet" href="./style.css">
+    
 </head>
 
 <body>
 
-    <header class="header"></header>
-
-<div class="section">
+    <header class="header">
 
     <!-- ハンバーガー -->
 
@@ -24,12 +23,16 @@
 
     <!-- ハンバーガー -->
 
+    </header>
 
-     <nav>
+<div class="section">
+
+     <nav class="nav-wrapper">
+
         <label for="menu" class="close">×</label>
-         <h6 class="rist">Rist</h6>
+         <h2 class="list">List</h2>
          <hr>
-         <ul>
+         <ul class="nav-list">
              <li>・</li>
              <li>・</li>
              <li>・</li>
@@ -37,27 +40,27 @@
              <li>・</li>
         </ul>
         <hr>
-       <h6 class="new-rist">+新しいRist</h6>
+        <button class="new-list">+新しいList</button>
     </nav>
         
-    <main>
-        <h3 class="today-task">今日のタスク</h3>
-        <ul>
-            <li><input type="checkbox" id="scales" name="scales"
+    <main class="main-wrapper">
+        <h1 class="today-task">今日のタスク</h1>
+        <ul class="list-checkbox">
+            <li><input type="checkbox" name="scales"
              checked></li>
-            <li><input type="checkbox" id="scales" name="scales"
+            <li><input type="checkbox" name="scales"
              checked></li>
-            <li><input type="checkbox" id="scales" name="scales"
+            <li><input type="checkbox" name="scales"
              checked></li>
-            <li><input type="checkbox" id="scales" name="scales"
+            <li><input type="checkbox" name="scales"
              checked></li>
-            <li><input type="checkbox" id="scales" name="scales"
+            <li><input type="checkbox" name="scales"
              checked></li>
         </ul>
         <hr>
-        <h6 class="new-task">+新しいTask</h6>
+        <button class="new-task">+新しいTask</button>
     </main>
-    <aside>
+    <aside class="calender">
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=bzJlYjdnZGE4c25hOTdqMzhmZjM1dDYzNXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA&color=%230B8043" style="border:solid 1px #777" width="300" height="600" frameborder="0" scrolling="no"></iframe>
     </aside>
 
